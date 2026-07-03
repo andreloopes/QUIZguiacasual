@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz: Encontre seu Restaurante ideal em SP</title>
+  
+  <!-- Google Fonts (Rethink Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body class="dark-theme">
+
+  <div class="quiz-wrapper">
+    <!-- Header with progress bar -->
+    <div class="quiz-header">
+      <span class="quiz-brand">EXAME Casual</span>
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+    </div>
+
+    <!-- Intro Screen -->
+    <div class="quiz-screen active" id="intro-screen">
+      <h1 class="quiz-title">Descubra o restaurante ideal para você em São Paulo</h1>
+      <p class="quiz-subtitle">Responda a 3 perguntas rápidas e encontre as melhores sugestões selecionadas pelo Guia 2026 para o seu perfil e ocasião.</p>
+      <div style="text-align: center;">
+        <button class="btn-primary" id="btn-start">Começar Quiz</button>
+      </div>
+    </div>
+
+    <!-- Question Screen -->
+    <div class="quiz-screen" id="question-screen">
+      <h2 class="question-title" id="question-title">Pergunta de exemplo?</h2>
+      <div class="options-list" id="options-list">
+        <!-- Generated Dynamically -->
+      </div>
+    </div>
+
+    <!-- Results Screen -->
+    <div class="quiz-screen" id="results-screen">
+      <h2 class="results-title">Suas Recomendações</h2>
+      <p class="results-subtitle">Estes são os estabelecimentos de São Paulo que mais combinam com o que você procura hoje:</p>
+      
+      <div class="recommendations-container" id="recommendations-container">
+        <!-- Cards Generated Dynamically -->
+      </div>
+
+      <div class="results-actions">
+        <button class="btn-secondary" id="btn-restart">Refazer Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Logic -->
+  <script src="src/quiz.js"></script>
+</body>
+</html>
